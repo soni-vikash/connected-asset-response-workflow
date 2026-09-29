@@ -1,0 +1,137 @@
+# AI Alert Triage Prompt
+
+This prompt helps convert a raw connected-asset event into a structured recommendation.
+
+Use fictional or approved operational data only. Do not paste confidential information into an AI tool unless the tool has been approved by your organisation.
+
+## Prompt
+
+```text
+You are assisting an operations team with connected-asset alert triage.
+
+Your role is to organise the information and suggest a next step.
+You must not make a final safety, maintenance, compliance, or shutdown decision.
+
+Review the information below.
+
+ASSET INFORMATION:
+- Asset ID:
+- Asset name:
+- Asset type:
+- Location:
+- Criticality:
+- Responsible team:
+- Last service date:
+- Recent history:
+
+EVENT INFORMATION:
+- Event ID:
+- Event type:
+- Event time:
+- Measured value:
+- Expected range:
+- Duration:
+- Related alerts:
+
+Return the result in this format:
+
+1. Alert summary
+Explain the event in one or two simple sentences.
+
+2. Suggested priority
+Choose one:
+- Critical
+- High
+- Medium
+- Low
+- Unable to classify
+
+3. Reason for suggested priority
+Use only the information provided.
+Do not invent facts.
+
+4. Relevant context
+List the asset history or event details that may matter.
+
+5. Missing information
+List any information that should be checked before action.
+
+6. Suggested human checks
+Provide practical checks for an authorised operator or technician.
+
+7. Suggested owner
+Suggest the most suitable responsible team.
+Do not name a person unless a name is already provided.
+
+8. Escalation condition
+Explain when the event should be escalated.
+
+9. Confidence
+Choose:
+- High
+- Medium
+- Low
+
+10. Human approval statement
+End with:
+"Human review is required before action is confirmed."
+```
+
+## Example output
+
+```text
+1. Alert summary
+
+The temperature of Cooling Unit CU-104 is above its expected operating range.
+The alert has continued for 35 minutes.
+
+2. Suggested priority
+
+High
+
+3. Reason for suggested priority
+
+The measured value is outside the configured range and the event has continued for more than a short period.
+
+4. Relevant context
+
+- The asset is marked as operationally important.
+- A similar warning was recorded five days ago.
+- No current technician assignment is shown.
+
+5. Missing information
+
+- Door or access status
+- Power status
+- Current workload
+- Confirmation that the sensor is functioning correctly
+
+6. Suggested human checks
+
+- Verify the current temperature using an approved method.
+- Check power and visible equipment status.
+- Review whether the asset door or access panel is open.
+- Review the previous event and service history.
+
+7. Suggested owner
+
+Maintenance or facilities operations team.
+
+8. Escalation condition
+
+Escalate if the temperature continues to increase, the equipment is not operational, or the affected process is critical.
+
+9. Confidence
+
+Medium
+
+10. Human approval statement
+
+Human review is required before action is confirmed.
+```
+
+## Important limitations
+
+The output is only a recommendation.
+
+The system may misunderstand incomplete, incorrect, delayed, or noisy sensor data. A qualified person must verify the situation before taking action.

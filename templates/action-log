@@ -1,0 +1,4 @@
+action_id,event_id,asset_id,assigned_to,priority,recommended_action,final_action,status,reviewed_by,created_at,completed_at,notes
+ACT-2001,EVT-1001,AST-001,Warehouse Operations,High,Verify temperature and inspect power and access status,Pending review,Open,,2026-09-29 08:45,,Human confirmation required
+ACT-2002,EVT-1002,AST-002,Fleet Operations,Medium,Inspect battery status and review vehicle history,Inspection scheduled,Open,,2026-09-29 09:00,,Vehicle should be checked before next long route
+ACT-2003,EVT-1003,AST-003,Maintenance Team,Critical,Stop and inspect according to approved safety procedure,Escalated,Escalated,,2026-09-29 09:10,,Do not resume normal operation without authorisation

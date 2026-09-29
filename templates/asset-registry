@@ -1,0 +1,6 @@
+asset_id,asset_name,asset_type,location,responsible_team,criticality,current_status,last_service_date,identifier_type,notes
+AST-001,Cold Storage Unit A,Temperature Sensor,Warehouse 1,Warehouse Operations,High,Active,2026-08-15,NFC,Temperature-sensitive storage
+AST-002,Delivery Vehicle 12,Vehicle System,Depot 2,Fleet Operations,Medium,Active,2026-07-20,QR,Delivery vehicle
+AST-003,Production Motor 4,Industrial Motor,Plant 1,Maintenance Team,Critical,Active,2026-08-02,NFC,Production equipment
+AST-004,Store Refrigerator 7,Refrigeration Unit,Store 7,Store Operations,Low,Active,2026-08-28,QR, Retail refrigeration
+AST-005,Building Pump 2,Water Pump,Building A,Facilities Team,Medium,Active,2026-06-11,NFC,Building water system

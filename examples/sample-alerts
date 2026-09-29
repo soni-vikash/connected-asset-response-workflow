@@ -1,0 +1,6 @@
+event_id,asset_id,asset_name,asset_type,location,event_type,event_time,measured_value,unit,expected_range,duration_minutes,criticality,source,status
+EVT-1001,AST-001,Cold Storage Unit A,Temperature Sensor,Warehouse 1,Temperature above range,2026-09-29 08:40,11.8,C,2-8,35,High,temperature-sensor,Open
+EVT-1002,AST-002,Delivery Vehicle 12,Vehicle System,Depot 2,Battery health warning,2026-09-29 08:55,68,percent,Above 70,10,Medium,vehicle-system,Open
+EVT-1003,AST-003,Production Motor 4,Industrial Motor,Plant 1,Unusual vibration,2026-09-29 09:05,7.4,mm/s,Below 4.5,12,Critical,vibration-sensor,Open
+EVT-1004,AST-004,Store Refrigerator 7,Refrigeration Unit,Store 7,Door open warning,2026-09-29 09:10,1,event,0,3,Low,door-sensor,Open
+EVT-1005,AST-005,Building Pump 2,Water Pump,Building A,Service interval reached,2026-09-29 09:20,1,event,0,0,Medium,maintenance-system,Open

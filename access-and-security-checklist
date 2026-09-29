@@ -1,0 +1,63 @@
+# Access and Security Checklist
+
+Use this checklist before connecting the workflow to real devices, systems, or operational data.
+
+## Asset and device identity
+
+- [ ] Every device or asset has a unique identifier.
+- [ ] The physical identifier matches the system record.
+- [ ] Duplicate identifiers are prevented.
+- [ ] Unknown devices and assets are flagged for review.
+- [ ] Asset ownership and location are recorded.
+
+## User access
+
+- [ ] Users authenticate before viewing operational data.
+- [ ] Access is based on role and responsibility.
+- [ ] Technicians can access only the assets they need.
+- [ ] Administrative actions require additional authorisation.
+- [ ] Former users lose access promptly.
+- [ ] Shared user accounts are avoided.
+
+## Data protection
+
+- [ ] Sensitive data is protected during transmission.
+- [ ] Sensitive data is protected when stored.
+- [ ] Credentials and secrets are not stored in CSV files.
+- [ ] Personal information is collected only when necessary.
+- [ ] Logs do not expose passwords, access tokens, or private keys.
+- [ ] Data retention and deletion rules are defined.
+
+## Device and system changes
+
+- [ ] Device configuration changes require authorisation.
+- [ ] Software updates use an approved process.
+- [ ] Changes are recorded in an audit log.
+- [ ] Production changes are tested before release.
+- [ ] Emergency changes have a review process.
+
+## Alert handling
+
+- [ ] Critical alerts have a named responsible team.
+- [ ] Alert ownership is visible.
+- [ ] Duplicate alerts can be identified.
+- [ ] Alert closure requires appropriate approval.
+- [ ] Escalation conditions are documented.
+- [ ] The system records who reviewed and closed an alert.
+
+## AI usage
+
+- [ ] AI output is treated as a recommendation.
+- [ ] Human review is required before important action.
+- [ ] The AI is not allowed to change device settings by default.
+- [ ] The AI is not allowed to close critical alerts automatically.
+- [ ] Prompts and outputs are reviewed for incorrect assumptions.
+- [ ] Approved data sources and AI tools are defined.
+
+## Before production use
+
+- [ ] Security testing is complete.
+- [ ] Failure and outage scenarios have been tested.
+- [ ] Monitoring and audit logging are enabled.
+- [ ] A rollback process exists.
+- [ ] The responsible owner has approved the workflow.
